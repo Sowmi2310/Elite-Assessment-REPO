@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        input:hover{
+        background-color: rgb(199, 230, 173);
+        }
+        input,select{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body> <center>
+    ENTER THE NAME: <input type="text" id="txt"> <br>
+    <h3>Enter the name and then click (click) button to add the name in the list  </h3> 
+    <select  id="slt">
+        <option value="">selected student list</option> 
+   </select> <br>
+    <button onclick="btn()">CLICK</button>
+    
+    <script>
+          function btn(){
+            var num=(document.getElementById("txt").value);
+            var sele=document.getElementById("slt");
+            var opt=document.createElement("option");
+             opt.textContent=num;
+             sele.appendChild(opt);
+            
+
+          }
+    </script>
+    </center>
+</body>
+</html>
