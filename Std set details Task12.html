@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+     <style>
+        input:hover{
+        background-color: lightblue;
+        }
+        input{
+            margin: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        div{
+            margin: 10px;
+        }
+        body{
+           background-color: rosybrown;
+        }
+        button:hover{
+            background-color: rgb(186, 183, 151);
+        }
+     </style>
+</head>
+<body> 
+    <div>
+    <center>
+    <h3>SELECTED STUDENT FORM</h3>
+    ENTER YOUR NAME:<input type="text" placeholder="Enter name"id="f1"><br>
+    ENTER COMPANY NAME: <input type="text" placeholder="Enter Companyname"id="f7"><br>
+    ENTER LOCATION: <input type="text"placeholder="Enter location" id="f4"> <br>
+    ENTER SALARY PACKAGE: <input type="number" placeholder="Enter package" id="f3"> <br>
+    <h4>click the button to get the details of the selected students</h4>
+    <button onclick="demo()"><a href="./Std get details Task12.html">submit</a></button>
+    <script>
+
+function demo(){
+   let a=document.getElementById("f1").value;
+   let b=document.getElementById("f7").value;
+   let c=document.getElementById("f4").value;
+   let d=document.getElementById("f3").value;
+
+
+   localStorage.setItem("name",a);
+   localStorage.setItem("cname",b);
+   localStorage.setItem("lname",c);
+   localStorage.setItem("sal",d);
+
+   location.assign("./Std get details Task12.html") ; 
+}
+
+    </script>
+    </center>
+</div>
+</body>

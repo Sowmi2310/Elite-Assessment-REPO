@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px rgb(146, 142, 136) solid;
+            margin-top: 20px;
+            margin-right: 80px;
+            margin-left: 80px;
+            background-color: rgb(138, 115, 85);
+            border-radius: 5px;
+        }
+        body{
+            background-color: rgb(138, 115, 85);
+        }
+    </style>
+</head>
+<body> 
+    <center>
+        <div>
+            <h4>selected student details</h4>
+     STUDENT NAME:<p id="f2"></p>
+     COMPANY NAME: <p id="f5"></p>
+     LOCATION: <p id="f9"></p>
+     SALARY: <p id="f6"></p>
+     <script>
+        document.getElementById("f2").textContent=localStorage.getItem("name")
+        document.getElementById("f5").textContent=localStorage.getItem("cname")
+        document.getElementById("f9").textContent=localStorage.getItem("lname")
+        document.getElementById("f6").textContent=localStorage.getItem("sal")
+     </script> 
+     </div>
+     </center>
+   
+</body>
+</html>
