@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number validate</title>
+    <style>
+        button{
+            margin: 5px;
+        }
+        body{
+            margin: 80px;
+           background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+   <script>
+    function validate(){
+         var a=document.getElementById("txt").value;
+         var check1=/^\d{10}$/;
+         
+         if((check1.test(a))){
+            alert("Number is Valid")
+         }
+         else{
+            alert("InValid Number")
+         }
+    }
+   </script>
+   <center>
+
+
+    ENTER NUMBER: <input type="tel"  id="txt"   placeholder="NUMBER"> <br>
+    <button  onclick="validate()">submit</button>
+</center>
+</body>
+</html>
