@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: slategray;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <script>
+        function em(){
+            let en=prompt("Are you register in our company(type registered or not registed)");
+            let name="registered";
+            var td=new Date();
+            var dd=td.getDate()+3;
+             var mm=td.getMonth()+1;
+            var yy=td.getFullYear();
+            // var ad=dd.addDate(3)
+           
+            if(en==name){
+                document.write("Thanks for your Registration Your Interview will be scheduled  on "+dd+"-"+mm+"-"+yy)
+            }
+            else{
+                document.write("you didn't register in our company")
+            }
+        }
+        em()
+    </script>
+    </center>
+</body>
+</html>
